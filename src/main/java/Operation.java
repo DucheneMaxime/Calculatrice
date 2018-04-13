@@ -46,6 +46,11 @@ public class Operation {
 		//TO DO tests
 	}
 	
+	/**
+	 * La méthode boucle tant que l'utilisateur ne donne pas de int
+	 * @param String a tester pour voir si c'est un int
+	 * @return
+	 */
 	public static int testInt(String test) {
 		Scanner sc = new Scanner(System.in);
 		/*while(!StringUtils.isNumeric(test)) {
@@ -69,6 +74,14 @@ public class Operation {
 		return test;
 	}
 	
+	/**
+	 * La méthode trouve le bon opérateur et appelle la bonne
+	 * méthode de calcul
+	 * @param Premier opérateur
+	 * @param Second opérateur
+	 * @param Opérateur + - * ou /
+	 * @return Le résultat de l'opération
+	 */
 	public static int CountRes(int num1, int num2, String ope) {
 		// We check what is the operator and call the right method accordingly
 		switch(ope) {
